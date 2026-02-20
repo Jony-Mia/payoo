@@ -1,13 +1,129 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <link rel="stylesheet" href="style.css">
+    <link defer="" media="all" onload="this.media='all'" rel="stylesheet"
+        href="https://site-assets.fontawesome.com/releases/v7.2.0/css/fontawesome.css">
+    <link defer="" media="all" onload="this.media='all'" rel="stylesheet"
+        href="https://site-assets.fontawesome.com/releases/v7.2.0/css/solid.css">
+    <style>
+        body::-webkit-scrollbar{
+            display: none;
+        }
+        *{
+            box-sizing: border-box;
+        }
+    </style>
+
 </head>
+
 <body>
-    hello
+    <header>
+        <nav class="border-b-1 container border-gray-400">
+
+            <section class="flex m-auto mt-3  px-5 justify-between items-center w-full gap-4">
+                <div>
+                    <img src="assets/logo.png" width="50" alt="">
+                </div>
+                <div>
+                    <p id="amount" class="font-bold">$45000</p>
+                    <p class="font-700 text-gray-500">Availiable</p>
+                </div>
+                <div class="sm:w-[60%] md:w-full w-[35%]"></div>
+                <button
+                    class="border-2 hover:scale-[0.9] transition-all border-gray-300 text-sm rounded-2xl py-2 px-4"><i
+                        class="fa-solid rotate-180 fa-arrow-right-from-bracket"></i> Log Out </button>
+            </section>
+            <br>
+        </nav>
+    </header>
+    <br>
+    <br>
+    <main class="container p-4">
+        <section>
+            <h1 class="font-bold text-3xl">Welcome to Pay<span class="text-[#7460ff]">oo</span> </h1>
+            <p>
+                Enjoy easy and convenient financial services with us. Cash out charge is low and
+            </p>
+        </section>
+
+        <section>
+            <section>
+                <br>
+                <br>
+                <br>
+                <div class="grid sm:grid-cols-3 w-[90%] mt-4 lg:grid-cols-6 grid-cols-3 gap-5 justify-around m-auto  flex-wrap">
+                    <button class="flex gap-3 h-[100px]  hover:bg-[#6dacf71f] hover:border-2 hover:border-[#6dacf7] items-center justify-center flex-col shadow p-4 rounded-lg ">
+                        <img src="assets/opt-1.png" alt="">
+                        <p>Add Money</p>
+                    </button>
+
+                    <button class="flex gap-3 h-[100px]  hover:bg-[#6dacf71f] hover:border-2 hover:border-[#6dacf7]  items-center justify-center flex-col shadow p-4 rounded-lg ">
+                        <img src="assets/opt-2.png" alt="">
+                        <p>Add Money</p>
+                    </button>
+                    <button class="flex gap-3 h-[100px]  hover:bg-[#6dacf71f] hover:border-2 hover:border-[#6dacf7]  items-center justify-center flex-col shadow p-4 rounded-lg ">
+
+                        <img src="assets/opt-3.png" alt="">
+                        <p>Add Money</p>
+                    </button>
+                    <button class="flex gap-3 h-[100px]  hover:bg-[#6dacf71f] hover:border-2 hover:border-[#6dacf7]  items-center justify-center flex-col shadow p-4 rounded-lg ">
+                        <img src="assets/opt-4.png" alt="">
+                        <p>Add Money</p>
+                    </button>
+
+                    <button class="flex gap-3 h-[100px]  hover:bg-[#6dacf71f] hover:border-2 hover:border-[#6dacf7]  items-center justify-center flex-col shadow p-4 rounded-lg ">
+                        <img src="assets/opt-5.png" alt="">
+                        <p>Add Money</p>
+                    </button>
+
+                    <button class="flex gap-3 h-[100px]  hover:bg-[#6dacf71f] hover:border-2 hover:border-[#6dacf7]  items-center justify-center flex-col shadow p-4 rounded-lg ">
+                        <img src="assets/opt-6.png" alt="">
+                        <p>Add Money</p>
+                    </button>
+                </div>
+            </section>
+        </section>
+    </main>
+    
+
+
+      <div class="flex justify-centeritems-center bg-white  ">
+          
+          <div class="shadow p-4 w-[90%] rounded-2xl  m-auto">
+                <h1>Add Money</h1>
+                
+                <label class="font-[600] my-3 inline-block" for="phone">Select a bank</label> <br>
+                <select name="" class=" border-2 w-full py-2 border-gray-300 rounded-full  px-4 py-2" id=""> 0
+                    <option value="AB Bank">AB Bank</option>
+                    <option value="Islami Bank">Ilami Bank</option>
+                    <option value="Prime Bank">Prime Bank</option>
+                    <option value="Exim Bank">Exim Bank</option>
+                </select>
+
+                <label class="font-[600] inline-block" for="phone">Bank Account Number</label> <br>
+                <input required type="number" value id="phone" class=" border-2 w-full my-2 border-gray-300 rounded-full px-3 py-2" placeholder="Enter 11 digit account number"> <br>
+
+                 <label class="font-[600]  inline-block" for="phone">Amount to Add</label> <br>
+                <input required type="number" value id="phone" class=" border-2 w-full my-2 border-gray-300 rounded-full px-3 py-2" placeholder="Add Amount to withdraw"> <br>
+             
+                <label class="font-[600] inline-block" for="pin"> Pin Number</label> <br>
+                <input required type="number" id="pin" class=" border-2 w-full border-gray-300 rounded-full px-4 py-2" placeholder="Enter 4 digit pin ">
+
+                <button class="bg-[#7460ff]  active:bg-black active:translate-y-2 mt-3 w-full p-3 py-3 text-[18px] text-white font-bold rounded-full" >Login</button>
+            </div>
+        </div>
+        
+<br>
+<br>
+<br>
+<br>
+    <script src="main.js"></script>
 </body>
+
 </html>
