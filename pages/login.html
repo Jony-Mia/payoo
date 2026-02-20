@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+
+<body class="bg-[#fefefe]">
+    <div class="flex h-[100vh] flex-col gap-10 justify-center items-center ">
+        <div>
+            <img width="200" src="../assets/Logo-full.png" alt="">
+        </div>
+        <div class="flex justify-center rounded-2xl items-center bg-white shadow  w-80 p-5 gap-4 py-6">
+            <br>
+            <br>
+            <div class="">
+                <label class="font-[600] my-3 inline-block" for="phone">Mobile Number</label> <br>
+
+                <input required type="text" value id="phone" class=" border-2 w-full my-2 border-gray-300 rounded-full px-4 py-2" placeholder="Enter your phone number"> <br>
+                <label class="font-[600] my-3 inline-block" for="pin">4 Digit Pin</label> <br>
+
+                <input required type="text" id="pin" class=" border-2 w-full border-gray-300 rounded-full px-4 py-2" placeholder="Enter 4 digit pin ">
+
+                <button class="bg-[#7460ff] active:bg-black active:translate-y-2 mt-3 w-full p-3 py-2 text-[16px] text-white font-bold rounded-full" onclick="validate()">Login</button>
+            </div>
+        </div>
+    </div>
+
+
+
+    <script src="login.js"></script>
+</body>
+</html>
