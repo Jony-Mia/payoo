@@ -5,15 +5,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="../style/daisyui@5.css">
+    <!-- <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script> -->
+    <script src="../style/browser@4.js"></script>
 </head>
 
-<body class="bg-[#fefefe]">
+<body class="bg-base-200">
     <div class="flex h-[100vh] flex-col gap-10 justify-center items-center ">
         <div>
             <img width="200" src="../assets/Logo-full.png" alt="">
         </div>
-        <div class="flex justify-center rounded-2xl items-center bg-white shadow  w-80 p-5 gap-4 py-6">
+        <!-- <div class="flex justify-center rounded-2xl items-center bg-white shadow  w-80 p-5 gap-4 py-6">
             <br>
             <br>
             <div class="">
@@ -26,11 +28,31 @@
 
                 <button class="bg-[#7460ff] active:bg-black active:translate-y-2 mt-3 w-full p-3 py-2 text-[16px] text-white font-bold rounded-full" onclick="validate()">Login</button>
             </div>
-        </div>
+        </div> -->
+      
+      
+        <form class="fieldset bg-base-100 shadow border-base-300 rounded-box w-xs border p-7">
+            <fieldset class="fieldset">
+                <label class="label font-bold mb-1 text-[16px] ">Phone Number</label>
+                <input type="number" id="number" class="input rounded-full bg-base-200 validator" placeholder="Mobile number" required />
+                <!-- <p class="validator-hint hidden">Required</p> -->
+            </fieldset>
+
+            <label class="fieldset">
+                <span class="label font-bold mb-1 text-[16px] ">4 Digit Pin</span>
+                <input type="password" id="pin" class="input  rounded-full bg-base-200 validator" placeholder="Enter your pin" required />
+                <!-- <span class="validator-hint hidden">Required</span> -->
+            </label>
+
+            <button id="submit" class="btn btn-primary mt-4 rounded-full" type="submit">Login</button>
+            <!-- <button class="btn btn-ghost mt-1" type="reset">Reset</button> -->
+        </form>
+
     </div>
 
 
 
     <script src="login.js"></script>
 </body>
+
 </html>
